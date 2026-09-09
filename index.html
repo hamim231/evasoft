@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evasoft — گروه نرم‌افزاری مستر سافت</title>
+
+    <meta name="description"
+          content="Evasoft؛ گروه نرم‌افزاری مبتنی بر فناوری‌های نوین در حوزه نرم‌افزار، هوش مصنوعی و داده.">
+    <meta name="theme-color" content="#07152f">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Evasoft — Software, AI & Data">
+    <meta property="og:description"
+          content="راهکارهای نوین نرم‌افزاری، هوش مصنوعی و داده برای ساخت محصولات دیجیتال آینده.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prevent theme flash -->
+    <script>
+        (() => {
+            const savedTheme = localStorage.getItem("evasoft-theme");
+            const systemDark = window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+            const theme = savedTheme || (systemDark ? "dark" : "light");
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         PAGE LOADER
+    ========================================================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">
+            <span class="loader-logo-mark">M</span>
+            <span>evasoft</span>
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+    </div>
+
+
+    <!-- =========================================================
+         BACKGROUND EFFECTS
+    ========================================================== -->
+    <div class="site-background" aria-hidden="true">
+        <div class="background-orb background-orb-1"></div>
+        <div class="background-orb background-orb-2"></div>
+        <div class="background-grid"></div>
+        <div class="background-noise"></div>
+    </div>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+    <header class="site-header" id="siteHeader">
+
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <a href="#home" class="brand" aria-label="Evasoft">
+
+                <!--
+                    جای لوگوی واقعی Evasoft
+                    بعداً می‌توانی این بخش را با img جایگزین کنی.
+                -->
+                <span class="brand-logo-placeholder">
+                    <span>M</span>
+                </span>
+
+                <span class="brand-content">
+                    <strong class="brand-name">evasoft</strong>
+                    <small class="brand-tagline">Software · AI · Data</small>
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+            <nav class="main-nav" aria-label="منوی اصلی">
+
+                <a href="#home" class="nav-link active">
+                    <span>خانه</span>
+                </a>
+
+                <a href="#about" class="nav-link">
+                    <span>درباره ما</span>
+                </a>
+
+                <a href="#products" class="nav-link">
+                    <span>محصولات</span>
+                </a>
+
+                <a href="#services" class="nav-link">
+                    <span>خدمات</span>
+                </a>
+
+                <a href="#technology" class="nav-link">
+                    <span>تکنولوژی</span>
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    <span>تماس با ما</span>
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+
+                <!-- Theme Toggle -->
+                <button
+                    class="icon-button theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="تغییر حالت نمایش"
+                    title="تغییر حالت نمایش"
+                >
+                    <i class="fa-solid fa-moon theme-icon-dark"></i>
+                    <i class="fa-solid fa-sun theme-icon-light"></i>
+                </button>
+
+
+                <!-- CTA -->
+                <a href="#contact" class="header-cta">
+                    <span>شروع همکاری</span>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="icon-button menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="باز کردن منو"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+
+            <nav aria-label="منوی موبایل">
+
+                <a href="#home" class="mobile-nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>خانه</span>
+                </a>
+
+                <a href="#about" class="mobile-nav-link">
+                    <i class="fa-solid fa-building"></i>
+                    <span>درباره ما</span>
+                </a>
+
+                <a href="#products" class="mobile-nav-link">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>محصولات</span>
+                </a>
+
+                <a href="#services" class="mobile-nav-link">
+                    <i class="fa-solid fa-code"></i>
+                    <span>خدمات</span>
+                </a>
+
+                <a href="#technology" class="mobile-nav-link">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>تکنولوژی</span>
+                </a>
+
+                <a href="#contact" class="mobile-nav-link">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>تماس با ما</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+    <main id="main">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+        <section class="hero-section section" id="home">
+
+            <div class="hero-glow hero-glow-right"></div>
+            <div class="hero-glow hero-glow-left"></div>
+
+            <div class="container hero-container">
+
+                <!-- Hero Content -->
+                <div class="hero-content reveal">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>ساختن آینده، با فناوری امروز</span>
+                    </div>
+
+
+                    <h1 class="hero-title">
+
+                        <span class="hero-title-line">
+                            نرم‌افزار را
+                        </span>
+
+                        <span class="hero-title-gradient">
+                            متفاوت می‌سازیم.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+                        Evasoft یک گروه نرم‌افزاری مدرن است که در سه حوزه
+                        <strong>نرم‌افزار، هوش مصنوعی و داده</strong>
+                        راهکارهای نوین و محصولات دیجیتال نسل جدید را طراحی و توسعه می‌دهد.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="#products" class="button button-primary">
+                            <span>مشاهده محصولات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                        <a href="#services" class="button button-secondary">
+                            <span>خدمات ما</span>
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-trust">
+
+                        <div class="hero-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Technology First</span>
+                        </div>
+
+                        <div class="hero-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Data Driven</span>
+                        </div>
+
+                        <div class="hero-trust-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>AI Native</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+                <div class="hero-visual reveal reveal-delay-2">
+
+                    <div class="hero-visual-glow"></div>
+
+                    <div class="hero-dashboard">
+
+                        <div class="dashboard-topbar">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="dashboard-address">
+                                evasoft / intelligence
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-content">
+
+                            <div class="dashboard-heading">
+                                <span class="dashboard-label">Evasoft OS</span>
+
+                                <h3>
+                                    Build.
+                                    <span>Think.</span>
+                                    Scale.
+                                </h3>
+                            </div>
+
+
+                            <div class="dashboard-chart">
+
+                                <div class="chart-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <svg
+                                    class="chart-line"
+                                    viewBox="0 0 500 180"
+                                    preserveAspectRatio="none"
+                                    aria-hidden="true"
+                                >
+                                    <defs>
+                                        <linearGradient
+                                            id="chartGradient"
+                                            x1="0%"
+                                            y1="0%"
+                                            x2="100%"
+                                            y2="0%"
+                                        >
+                                            <stop offset="0%" />
+                                            <stop offset="100%" />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <path
+                                        d="M0 155
+                                           C35 145 48 125 82 132
+                                           C115 140 124 98 155 105
+                                           C185 112 201 88 228 92
+                                           C258 97 266 61 300 70
+                                           C333 79 345 46 370 54
+                                           C405 66 417 24 445 35
+                                           C465 43 478 21 500 8"
+                                    />
+
+                                </svg>
+
+                            </div>
+
+
+                            <div class="dashboard-metrics">
+
+                                <div class="metric-card">
+                                    <span>AI</span>
+                                    <strong>98.4%</strong>
+                                    <small>Intelligence</small>
+                                </div>
+
+                                <div class="metric-card">
+                                    <span>DATA</span>
+                                    <strong>24.8K</strong>
+                                    <small>Insights</small>
+                                </div>
+
+                                <div class="metric-card">
+                                    <span>CORE</span>
+                                    <strong>99.9%</strong>
+                                    <small>Reliability</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating Cards -->
+
+                    <div class="floating-card floating-card-ai">
+
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <div>
+                            <span>AI Engine</span>
+                            <strong>Active</strong>
+                        </div>
+
+                        <span class="status-dot"></span>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-data">
+
+                        <div class="floating-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <div>
+                            <span>Data Driven</span>
+                            <strong>Live Analytics</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero bottom stats -->
+            <div class="container hero-stats-container">
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+                        <strong>01</strong>
+                        <span>Software</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>02</strong>
+                        <span>Artificial Intelligence</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>03</strong>
+                        <span>Data</span>
+                    </div>
+
+                    <div class="hero-stat hero-stat-highlight">
+                        <strong>∞</strong>
+                        <span>Possibilities</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT / INTRO
+        ====================================================== -->
+        <section class="about-section section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <div class="section-kicker">
+                        <span>WHO WE ARE</span>
+                    </div>
+
+                    <h2 class="section-title">
+                        فقط نرم‌افزار نمی‌سازیم؛
+                        <span>راهکار می‌سازیم.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        ما در Evasoft باور داریم تکنولوژی زمانی ارزشمند است
+                        که بتواند یک مسئله واقعی را بهتر، سریع‌تر و هوشمندانه‌تر حل کند.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-main-card reveal">
+
+                        <div class="about-card-number">01</div>
+
+                        <div class="about-card-icon">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+
+                        <h3>
+                            Technology<br>
+                            <span>without limits.</span>
+                        </h3>
+
+                        <p>
+                            از معماری نرم‌افزار تا هوش مصنوعی و تحلیل داده،
+                            هر محصول با نگاه به آینده و بر پایه تکنولوژی‌های
+                            مدرن طراحی می‌شود.
+                        </p>
+
+                        <a href="#values" class="text-link">
+                            <span>رویکرد ما</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-side-cards">
+
+                        <article class="about-small-card reveal reveal-delay-1">
+
+                            <div class="small-card-top">
+                                <span class="small-card-icon">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </span>
+
+                                <span class="small-card-number">02</span>
+                            </div>
+
+                            <h3>معماری حرفه‌ای</h3>
+
+                            <p>
+                                ساختارهای مقیاس‌پذیر و معماری‌های مدرن
+                                برای محصولات قابل توسعه.
+                            </p>
+
+                        </article>
+
+
+                        <article class="about-small-card reveal reveal-delay-2">
+
+                            <div class="small-card-top">
+                                <span class="small-card-icon">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </span>
+
+                                <span class="small-card-number">03</span>
+                            </div>
+
+                            <h3>امنیت در هسته</h3>
+
+                            <p>
+                                امنیت از ابتدا بخشی از معماری است؛
+                                نه چیزی که در انتهای پروژه اضافه شود.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             THREE PILLARS
+        ====================================================== -->
+        <section class="pillars-section section" id="pillars">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div class="section-kicker">
+                        <span>OUR CORE</span>
+                    </div>
+
+                    <h2 class="section-title">
+                        سه حوزه،
+                        <span>یک اکوسیستم.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        فعالیت Evasoft بر سه ستون اصلی بنا شده است؛
+                        ستون‌هایی که در کنار یکدیگر محصولات و خدمات هوشمند
+                        و آینده‌نگر ایجاد می‌کنند.
+                    </p>
+
+                </div>
+
+
+                <div class="pillars-grid">
+
+                    <!-- Software -->
+                    <article class="pillar-card pillar-software reveal">
+
+                        <div class="pillar-number">01</div>
+
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div class="pillar-content">
+
+                            <span class="pillar-label">SOFTWARE</span>
+
+                            <h3>نرم‌افزار</h3>
+
+                            <p>
+                                طراحی و توسعه محصولات نرم‌افزاری مدرن،
+                                مقیاس‌پذیر و چندسکویی برای پلتفرم‌های مختلف.
+                            </p>
+
+                            <div class="pillar-tags">
+                                <span>Web</span>
+                                <span>iOS</span>
+                                <span>Android</span>
+                                <span>Desktop</span>
+                            </div>
+
+                        </div>
+
+                        <div class="pillar-arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+
+                    </article>
+
+
+                    <!-- AI -->
+                    <article class="pillar-card pillar-ai reveal reveal-delay-1">
+
+                        <div class="pillar-number">02</div>
+
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <div class="pillar-content">
+
+                            <span class="pillar-label">ARTIFICIAL INTELLIGENCE</span>
+
+                            <h3>هوش مصنوعی</h3>
+
+                            <p>
+                                ترکیب هوش مصنوعی با محصولات و خدمات برای
+                                ایجاد تجربه‌های هوشمند و خودکار.
+                            </p>
+
+                            <div class="pillar-tags">
+                                <span>LLM</span>
+                                <span>AI Agents</span>
+                                <span>ML</span>
+                                <span>Automation</span>
+                            </div>
+
+                        </div>
+
+                        <div class="pillar-arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Data -->
+                    <article class="pillar-card pillar-data reveal reveal-delay-2">
+
+                        <div class="pillar-number">03</div>
+
+                        <div class="pillar-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div class="pillar-content">
+
+                            <span class="pillar-label">DATA</span>
+
+                            <h3>داده</h3>
+
+                            <p>
+                                تبدیل داده‌های خام به بینش قابل استفاده
+                                برای تصمیم‌گیری بهتر و ساخت محصولات Data-Driven.
+                            </p>
+
+                            <div class="pillar-tags">
+                                <span>Analytics</span>
+                                <span>Big Data</span>
+                                <span>BI</span>
+                                <span>Insights</span>
+                            </div>
+
+                        </div>
+
+                        <div class="pillar-arrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             VALUES
+        ====================================================== -->
+        <section class="values-section section" id="values">
+
+            <div class="container">
+
+                <div class="values-layout">
+
+                    <div class="values-intro reveal">
+
+                        <div class="section-kicker">
+                            <span>OUR VALUES</span>
+                        </div>
+
+                        <h2 class="section-title">
+                            استانداردهایی که
+                            <span>کوتاه نمی‌آیند.</span>
+                        </h2>
+
+                        <p>
+                            کیفیت برای ما یک ویژگی اضافه نیست؛
+                            بخشی از DNA هر محصول و هر خدمتی است که ارائه می‌دهیم.
+                        </p>
+
+                        <div class="values-orbit" aria-hidden="true">
+
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+
+                            <div class="orbit-core">
+                                <span>M</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="values-list">
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">01</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>تکنولوژی‌های روز</h3>
+                                <p>
+                                    استفاده از آخرین تکنولوژی‌ها و راهکارهای
+                                    نوین برای ساخت محصولات آماده آینده.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">02</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>UI/UX در سطح محصول</h3>
+                                <p>
+                                    تجربه کاربری زیبا، ساده و هدفمند در کنار
+                                    طراحی رابط کاربری دقیق و حرفه‌ای.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">03</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>معماری حرفه‌ای</h3>
+                                <p>
+                                    معماری قابل توسعه و مقیاس‌پذیر، مبتنی بر
+                                    اصول مهندسی نرم‌افزار و Microservices.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">04</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>امنیت</h3>
+                                <p>
+                                    امنیت در تمام لایه‌ها با رویکردهای مدرن
+                                    و فناوری‌هایی مانند SSO.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">05</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>هوش مصنوعی</h3>
+                                <p>
+                                    ترکیب AI با محصولات و خدمات برای ساخت
+                                    تجربه‌هایی که واقعاً هوشمند هستند.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">06</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>Multi-Platform</h3>
+                                <p>
+                                    تجربه‌ای یکپارچه در وب، مک، ویندوز،
+                                    Android، iOS و تلویزیون‌های هوشمند.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="value-item reveal">
+
+                            <span class="value-number">07</span>
+
+                            <div class="value-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+
+                            <div class="value-content">
+                                <h3>Data-Driven</h3>
+                                <p>
+                                    تصمیم‌گیری و توسعه محصول بر اساس داده،
+                                    تحلیل و بینش قابل اندازه‌گیری.
+                                </p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRODUCTS
+        ====================================================== -->
+        <section class="products-section section" id="products">
+
+            <div class="container">
+
+                <div class="section-heading products-heading reveal">
+
+                    <div>
+                        <div class="section-kicker">
+                            <span>OUR PRODUCTS</span>
+                        </div>
+
+                        <h2 class="section-title">
+                            محصولاتی برای
+                            <span>دنیای واقعی.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-description">
+                        مجموعه‌ای از محصولات نرم‌افزاری Evasoft که با
+                        تمرکز بر تجربه کاربری، تکنولوژی و داده ساخته می‌شوند.
+                    </p>
+
+                </div>
+
+
+                <div class="products-grid">
+
+
+                    <!-- Product 01 -->
+                    <article class="product-card product-card-featured reveal">
+
+                        <div class="product-image placeholder-image">
+
+                            <div class="placeholder-pattern"></div>
+
+                            <div class="placeholder-content">
+
+                                <span class="placeholder-icon">
+                                    <i class="fa-solid fa-image"></i>
+                                </span>
+
+                                <span>
+                                    Product Image
+                                </span>
+
+                            </div>
+
+                            <span class="product-badge">
+                                محصول منتخب
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-meta">
+                                <span>SOFTWARE</span>
+                                <span>01</span>
+                            </div>
+
+                            <h3>نام محصول</h3>
+
+                            <p>
+                                توضیح کوتاه درباره محصول در این قسمت قرار می‌گیرد.
+                                این متن بعداً با توضیحات واقعی محصول جایگزین خواهد شد.
+                            </p>
+
+                            <div class="product-footer">
+
+                                <div class="product-platforms">
+
+                                    <i class="fa-brands fa-apple"></i>
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-brands fa-android"></i>
+                                    <i class="fa-solid fa-globe"></i>
+
+                                </div>
+
+                                <a href="#" class="product-link" aria-label="مشاهده محصول">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 02 -->
+                    <article class="product-card reveal reveal-delay-1">
+
+                        <div class="product-image placeholder-image">
+
+                            <div class="placeholder-pattern"></div>
+
+                            <div class="placeholder-content">
+
+                                <span class="placeholder-icon">
+                                    <i class="fa-solid fa-image"></i>
+                                </span>
+
+                                <span>Product Image</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-meta">
+                                <span>AI</span>
+                                <span>02</span>
+                            </div>
+
+                            <h3>محصول هوشمند</h3>
+
+                            <p>
+                                توضیحات محصول در این بخش قرار خواهد گرفت.
+                            </p>
+
+                            <div class="product-footer">
+
+                                <div class="product-platforms">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+
+                                <a href="#" class="product-link" aria-label="مشاهده محصول">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 03 -->
+                    <article class="product-card reveal reveal-delay-2">
+
+                        <div class="product-image placeholder-image">
+
+                            <div class="placeholder-pattern"></div>
+
+                            <div class="placeholder-content">
+
+                                <span class="placeholder-icon">
+                                    <i class="fa-solid fa-image"></i>
+                                </span>
+
+                                <span>Product Image</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-meta">
+                                <span>DATA</span>
+                                <span>03</span>
+                            </div>
+
+                            <h3>پلتفرم داده</h3>
+
+                            <p>
+                                توضیحات محصول در این بخش قرار خواهد گرفت.
+                            </p>
+
+                            <div class="product-footer">
+
+                                <div class="product-platforms">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+
+                                <a href="#" class="product-link" aria-label="مشاهده محصول">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 04 -->
+                    <article class="product-card reveal reveal-delay-3">
+
+                        <div class="product-image placeholder-image">
+
+                            <div class="placeholder-pattern"></div>
+
+                            <div class="placeholder-content">
+
+                                <span class="placeholder-icon">
+                                    <i class="fa-solid fa-image"></i>
+                                </span>
+
+                                <span>Product Image</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-meta">
+                                <span>SOFTWARE</span>
+                                <span>04</span>
+                            </div>
+
+                            <h3>محصول چهارم</h3>
+
+                            <p>
+                                توضیحات محصول در این بخش قرار خواهد گرفت.
+                            </p>
+
+                            <div class="product-footer">
+
+                                <div class="product-platforms">
+                                    <i class="fa-solid fa-desktop"></i>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+
+                                <a href="#" class="product-link" aria-label="مشاهده محصول">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+        <section class="services-section section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <div class="section-kicker">
+                        <span>OUR SERVICES</span>
+                    </div>
+
+                    <h2 class="section-title">
+                        ایده شما،
+                        <span>محصول ما.</span>
+                    </h2>
+
+                    <p class="section-description">
+                        از ایده اولیه تا محصول نهایی، در کنار شما هستیم.
+                        خدمات Evasoft با استانداردهای یک تیم محصول‌محور
+                        و تکنولوژی‌محور ارائه می‌شود.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">01</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>توسعه نرم‌افزار</h3>
+
+                        <p>
+                            طراحی و توسعه اپلیکیشن‌های وب، موبایل و دسکتاپ
+                            با معماری مدرن و قابل توسعه.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Web</span>
+                            <span>Mobile</span>
+                            <span>Desktop</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay-1">
+
+                        <div class="service-number">02</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <h3>هوش مصنوعی</h3>
+
+                        <p>
+                            طراحی و پیاده‌سازی راهکارهای AI، مدل‌های هوشمند،
+                            اتوماسیون و دستیارهای مبتنی بر LLM.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>AI</span>
+                            <span>LLM</span>
+                            <span>Agents</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay-2">
+
+                        <div class="service-number">03</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <h3>داده و تحلیل</h3>
+
+                        <p>
+                            طراحی زیرساخت داده، داشبوردهای تحلیلی و تبدیل
+                            داده به بینش قابل استفاده.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Data</span>
+                            <span>BI</span>
+                            <span>Analytics</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">04</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <h3>UI / UX Design</h3>
+
+                        <p>
+                            طراحی تجربه کاربری و رابط‌های مدرن با تمرکز
+                            بر زیبایی، usability و conversion.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>UX</span>
+                            <span>UI</span>
+                            <span>Design System</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay-1">
+
+                        <div class="service-number">05</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <h3>معماری نرم‌افزار</h3>
+
+                        <p>
+                            طراحی معماری‌های حرفه‌ای، مقیاس‌پذیر و مبتنی
+                            بر اصول Microservices و Cloud Native.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>Cloud</span>
+                            <span>Microservices</span>
+                            <span>Scalable</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal reveal-delay-2">
+
+                        <div class="service-number">06</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h3>امنیت و یکپارچه‌سازی</h3>
+
+                        <p>
+                            طراحی سرویس‌های امن، احراز هویت مدرن و اتصال
+                            سرویس‌ها و سیستم‌های مختلف به یکدیگر.
+                        </p>
+
+                        <div class="service-tags">
+                            <span>SSO</span>
+                            <span>Security</span>
+                            <span>Integration</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TECHNOLOGY
+        ====================================================== -->
+        <section class="technology-section section" id="technology">
+
+            <div class="container">
+
+                <div class="technology-card reveal">
+
+                    <div class="technology-content">
+
+                        <div class="section-kicker">
+                            <span>TECHNOLOGY STACK</span>
+                        </div>
+
+                        <h2 class="section-title">
+                            با تکنولوژی امروز،
+                            <span>برای فردا.</span>
+                        </h2>
+
+                        <p>
+                            تکنولوژی برای ما فقط یک ابزار نیست.
+                            انتخاب درست تکنولوژی بخشی از طراحی محصول است.
+                        </p>
+
+                        <div class="technology-note">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>
+                                لیست تکنولوژی‌ها متناسب با هر پروژه و نیازمندی
+                                انتخاب می‌شود.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="technology-stack">
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Android</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Apple</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-brands fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-solid fa-cloud"></i>
+                            <span>Cloud</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Data</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI</span>
+                        </div>
+
+                        <div class="tech-item">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>IoT</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MULTI PLATFORM
+        ====================================================== -->
+        <section class="platform-section section">
+
+            <div class="container">
+
+                <div class="platform-header reveal">
+
+                    <div>
+
+                        <div class="section-kicker">
+                            <span>EVERYWHERE</span>
+                        </div>
+
+                        <h2 class="section-title">
+                            یک تجربه،
+                            <span>روی همه پلتفرم‌ها.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        محصولات و خدمات ما با نگاه Multi-Platform طراحی می‌شوند
+                        تا تجربه‌ای یکپارچه و بدون محدودیت ایجاد کنند.
+                    </p>
+
+                </div>
+
+
+                <div class="platforms-showcase reveal">
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <span>Web</span>
+
+                    </div>
+
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+
+                        <span>macOS</span>
+
+                    </div>
+
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-brands fa-windows"></i>
+                        </div>
+
+                        <span>Windows</span>
+
+                    </div>
+
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+
+                        <span>Android</span>
+
+                    </div>
+
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+
+                        <span>iOS</span>
+
+                    </div>
+
+
+                    <div class="platform-item">
+
+                        <div class="platform-icon">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+
+                        <span>Smart TV</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROCESS
+        ====================================================== -->
+        <section class="process-section section">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <div class="section-kicker">
+                        <span>HOW WE WORK</span>
+                    </div>
+
+                    <h2 class="section-title">
+                        از ایده تا
+                        <span>واقعیت.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-step reveal">
+
+                        <div class="process-number">01</div>
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            شناخت مسئله، نیازمندی‌ها و تعریف مسیر درست محصول.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step reveal reveal-delay-1">
+
+                        <div class="process-number">02</div>
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <h3>Design</h3>
+
+                        <p>
+                            طراحی تجربه، رابط کاربری و معماری محصول.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step reveal reveal-delay-2">
+
+                        <div class="process-number">03</div>
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>Build</h3>
+
+                        <p>
+                            توسعه محصول با تکنولوژی و استانداردهای مناسب.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step reveal reveal-delay-3">
+
+                        <div class="process-number">04</div>
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <h3>Launch</h3>
+
+                        <p>
+                            انتشار، اندازه‌گیری، بهبود و رشد مداوم محصول.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+        <section class="cta-section section" id="contact">
+
+            <div class="container">
+
+                <div class="cta-card reveal">
+
+                    <div class="cta-glow"></div>
+
+                    <div class="cta-grid-pattern"></div>
+
+
+                    <div class="cta-content">
+
+                        <div class="section-kicker">
+                            <span>LET'S BUILD</span>
+                        </div>
+
+                        <h2>
+                            ایده‌ای دارید؟
+                            <br>
+                            <span>بیایید بسازیمش.</span>
+                        </h2>
+
+                        <p>
+                            اگر به دنبال ساخت یک محصول نرم‌افزاری مدرن،
+                            هوشمند و مقیاس‌پذیر هستید، با ما صحبت کنید.
+                        </p>
+
+                        <a href="mailto:hello@evasoft.ir" class="button button-light">
+
+                            <span>شروع یک گفتگو</span>
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="cta-visual" aria-hidden="true">
+
+                        <div class="cta-ring ring-1"></div>
+                        <div class="cta-ring ring-2"></div>
+                        <div class="cta-ring ring-3"></div>
+
+                        <div class="cta-center">
+                            <span>M</span>
+                        </div>
+
+                        <span class="cta-orbit-dot dot-1"></span>
+                        <span class="cta-orbit-dot dot-2"></span>
+                        <span class="cta-orbit-dot dot-3"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="#home" class="brand">
+
+                        <span class="brand-logo-placeholder">
+                            <span>M</span>
+                        </span>
+
+                        <span class="brand-content">
+                            <strong class="brand-name">evasoft</strong>
+                            <small class="brand-tagline">
+                                Software · AI · Data
+                            </small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        گروه نرم‌افزاری Evasoft؛
+                        ساخت محصولات و راهکارهای نوین در مرز
+                        نرم‌افزار، هوش مصنوعی و داده.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        <a href="#" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer Links -->
+                <div class="footer-links-column">
+
+                    <h3>Evasoft</h3>
+
+                    <a href="#about">درباره ما</a>
+                    <a href="#values">ارزش‌های ما</a>
+                    <a href="#technology">تکنولوژی</a>
+                    <a href="#contact">تماس با ما</a>
+
+                </div>
+
+
+                <div class="footer-links-column">
+
+                    <h3>محصولات</h3>
+
+                    <a href="#products">محصولات ما</a>
+                    <a href="#products">محصولات نرم‌افزاری</a>
+                    <a href="#products">محصولات AI</a>
+                    <a href="#products">محصولات Data</a>
+
+                </div>
+
+
+                <div class="footer-links-column">
+
+                    <h3>خدمات</h3>
+
+                    <a href="#services">توسعه نرم‌افزار</a>
+                    <a href="#services">هوش مصنوعی</a>
+                    <a href="#services">Data & Analytics</a>
+                    <a href="#services">UI / UX</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="currentYear"></span>
+                    Evasoft. تمامی حقوق محفوظ است.
+                </span>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">شرایط استفاده</a>
+
+                </div>
+
+                <span class="footer-made">
+                    Built with
+                    <i class="fa-solid fa-heart"></i>
+                    & technology
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="بازگشت به بالا"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- =========================================================
+         MAIN JAVASCRIPT
+    ========================================================== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
