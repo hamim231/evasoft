@@ -330,20 +330,13 @@ img {
 .loader-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 800;
+    justify-content: center;
 }
 
-.loader-logo-mark {
-    display: grid;
-    place-items: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 13px;
-    background:
-        linear-gradient(135deg, #3788ff, #6d63ff);
+.loader-logo img {
+    width: 180px;
+    height: auto;
+    display: block;
 }
 
 .loader-line {
@@ -437,6 +430,10 @@ img {
     border: 1px solid rgba(255,255,255,.15);
 }
 
+.brand-logo {
+    max-width: 70%;
+}
+
 .brand-content {
     display: flex;
     flex-direction: column;
@@ -444,7 +441,7 @@ img {
 }
 
 .brand-name {
-    direction: ltr;
+    direction: rtl;
     font-size: 1.05rem;
     letter-spacing: -0.03em;
 }
