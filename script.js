@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initLoader();
     initHeader();
     initMobileMenu();
+    initLanguageSwitcher();
     initScrollReveal();
     initActiveNavigation();
     initBackToTop();
@@ -357,6 +358,56 @@ function initScrollReveal() {
 
     revealElements.forEach(element => {
         observer.observe(element);
+    });
+
+}
+
+
+/* ---------------------------------------------------------
+   6. LANGUAGE SWITCHER
+--------------------------------------------------------- */
+
+function initLanguageSwitcher() {
+
+    const switcher = document.querySelector(".language-switcher");
+    const toggle = document.querySelector(".language-toggle");
+
+    if (!switcher || !toggle) {
+        return;
+    }
+
+    const current = document.querySelector(".language-current");
+    const activeCode = switcher.querySelector(".language-option.active small");
+
+    if (current && activeCode) {
+        current.textContent = activeCode.textContent.trim();
+    }
+
+    const close = () => {
+        switcher.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+    };
+
+    toggle.addEventListener("click", event => {
+        event.stopPropagation();
+        const open = switcher.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(open));
+    });
+
+    switcher.querySelectorAll(".language-option").forEach(option => {
+        option.addEventListener("click", close);
+    });
+
+    document.addEventListener("click", event => {
+        if (!switcher.contains(event.target)) {
+            close();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            close();
+        }
     });
 
 }
